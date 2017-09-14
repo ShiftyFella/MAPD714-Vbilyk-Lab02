@@ -18,7 +18,8 @@ class ViewController: UIViewController {
     }
 
     @IBAction func buttonAction(_ sender: UIButton) {
-        outputLabel.text = "Button was clicked"
+        print(sender.titleLabel!.text!)
+        outputLabel.text = sender.titleLabel!.text! + " button was clicked!"
     }
 }
 
